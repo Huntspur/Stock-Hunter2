@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Company Name ???</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="script.js"></script>
+
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" type="text/css" href="/CSS/style.css">
+    <link rel="icon" href="/img/left_image.png">
+</head>
+<body>
+    <!-- The header section with the navigation bar -->
+    <header>
+        <nav>
+            <!--(modify href to link to your home page) -->
+            <a href="/Home/Home.html"><strong>Home</strong></a>
+            <a href="/Shop/Shop-Main.html"><strong>Shop</strong></a>
+            <a href="/Our-Work/Our-Work.html"><strong>Our work</strong></a>
+            <a href="#"><strong>Our services</strong></a>
+
+            <a href="/login/Login.html" id="Login"><strong>Login not func</strong></a>
+        </nav>
+    </header>
+    <div class="main-content">
+            <h1>Welcome to....</h1>
+            <hr>
+            <!-- Slideshow container -->
+    <div class="slideshow-container">
+        <!-- Full-width slides/quotes -->
+        <div class="mySlides">
+          <p>blah ablabh abhargh airg</p>
+        </div>
+  
+        <div class="mySlides">
+            <p>blah ablabh abhargh airg</p>
+
+        </div>
+  
+        <div class="mySlides">
+            <p>blah ablabh abhargh airg</p>
+
+        </div>
+  
+    <!-- Next/prev buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+  
+  <!-- Dots/bullets/indicators -->
+  <div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+
+
+  <footer>
+    <div class = "footer-wrapper">
+        <section class="footer-top">
+            <a href="#" title="Logo">
+                <img src="/img/right_image.png" class="logo" alt="right_image">
+            </a>
+            <span class="social-links">
+                <a href="#" title = "instagram">
+                    <img src="/img/left_image.png" alt="instagram">
+                </a>
+                <a href="#" title = "facebook">
+                    <img src="/img/left_image.png" alt="facebook">
+                </a>
+                <a href="#" title = "twitter">
+                    <img src="/img/left_image.png" alt="twitter">
+                </a> 
+            </span>    
+        </section>
+        <section class="footer-columns">
+            <section>
+                <ul>
+                    <h3>Our services</h3>
+                    <li>
+                        <a href="#">3D Interactive PC builder</a>
+                    </li>
+                    <li>
+                        <a href="#">Repairs</a>
+                    </li>
+                    <li>
+                        <a href="#">Tech Valeting</a>
+                    </li>
+                    <li>
+                        <a href="#">Home istallations</a>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <h3>Products</h3>
+                    <li>
+                        <a href="#">Product</a>
+                    </li>
+                    <li>
+                        <a href="#">Product</a>
+                    </li>
+                    <li>
+                        <a href="#">Product</a>
+                    </li>
+                    <li>
+                        <a href="#">Product</a>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <h3>Other links</h3>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#">About us</a>
+                    </li>
+                    <li>
+                        <a href="#">Feedback</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </section>
+            <section class = "footer-bottom">
+                    <small>Company Name Here <span id = "year"></span>, all righthray rabgu </small>
+                    <span class="footer-bottom-links">
+                        <a href="#" title = "terms and conds">Ts and Cs</a>    
+                        <a href="#" title = "Priv pol">Priv pol</a>
+                        <a href="/OtherLinks/Our-location.html" title = "Where?">Where to find us</a>    
+                    </span>
+            </section>
+        </section>
+    </div>
+</footer>
+    
+    
+ <script>var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }</script>
+
+</body>
+</html>

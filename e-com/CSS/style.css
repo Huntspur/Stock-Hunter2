@@ -1,0 +1,488 @@
+/* Basic styling for the navigation bar */
+:root{
+    --footer-background: black; 
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica ;
+    min-height: 100vh;
+    background-color: #f1f1f1f1;
+    overflow-x:hidden;
+}
+
+header {
+    background-color: black;
+    padding: 10px;
+}
+*{
+    box-sizing: border-box;
+}
+hr{
+    width: 95%;
+    
+}
+
+/* Apply flex display to the nav element */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: black;
+}
+
+/* Style the navigation links */
+nav a {
+    color: #0C7489;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+nav :hover{
+    color: #0d94af;
+}
+footer {
+    
+    left: 0;
+    bottom: 0;
+    background-color: var(--footer-background);
+    color: #0C7489;
+    min-width: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    z-index: 10;
+    padding: 3px;
+}
+
+.footer-wrapper {
+    display: flex;
+    background: var(--footer-background);
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.footer-columns ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-columns ul a {
+    color: white;
+    text-decoration: none;
+
+}
+.footer-columns ul a:hover{
+    text-decoration: underline;
+
+}
+.footer-columns ul li{
+    margin-bottom: 16px;
+    margin-top: 5px;
+}
+
+.logo{
+    width: 40px;
+}
+.social-links{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+.social-links img{
+    width: 24px;
+    height: 24px;
+    transition: all 0.2s ease-in-out;
+}
+.social-links img:hover{
+    transform: scale(1.1);
+}
+.footer-top{
+    display: flex;
+    width: 34%;
+    flex-wrap: wrap;
+    align-items:baseline;
+    justify-content: space-between;
+    border-bottom: 2px solid red;
+}
+.footer-columns{
+    padding-top: 24px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-around;
+}
+.footer-columns h3{
+    color: #0C7489;
+    margin-top: 0;
+    margin-bottom: 0px;
+    font-size: 1.125rem;
+}
+.footer-columns > section{
+    min-width: 200px;
+}
+.footer-bottom{
+    text-align: center;
+    border-top: 2px solid rgb(255, 0, 0);
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 0px;
+    
+    flex-wrap: wrap;
+}
+.footer-bottom-links{
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+@media(max-width: 800px){
+    .footer-bottom-links{
+        margin: 0 auto;
+    }
+}
+.footer-bottom-links > a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer-bottom-links > a:hover{
+    text-decoration: underline;
+}
+
+.footer-bottom > small{
+    font-size: 16px;
+    margin: 0 4px;
+}
+
+/* Align the Login link to the right */
+#Login {
+    margin-left: auto;
+    
+}
+
+/* Style for ShopButtons */
+.ShopButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align children to the start (left) side */
+    border:1px solid blue;
+    flex-wrap: wrap;
+
+}
+
+.Button-1, .Button-2{
+    display: flex;
+    flex-direction: row;
+    border:2px solid green;
+    align-items: center;
+}
+
+.Desc{
+    border:2px solid green;
+
+}
+
+.Button-2{
+    
+    margin-left: auto;
+}
+
+
+
+.ShopButtons a img {
+    max-width: 900px; /* Adjust the width as needed */
+    margin: 30px;
+    transition: transform 0.5s ease-out;
+}
+
+/* Hover effect for images */
+.ShopButtons a:hover img {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+ /* Add an italic font style to all quotes */
+  
+  /* Add a blue color to the author */
+  .author {
+    color: #0C7489;
+}
+
+.main-content p {
+    text-align: center;
+}
+
+
+.row {
+    margin: 8px -16px;
+    display:flex;
+  }
+  
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  /*pray*/
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    background-color: #9b9b9b;
+    margin: 2px;
+    border-radius: 2px;
+  }
+  .card button{
+    width: 100%;
+    border:none;
+    cursor: pointer;
+    background-color: #888;
+
+  }
+  .card button:hover{
+    opacity: 0.7;
+  }
+  .card-containers{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+  }
+
+.cart{ 
+    position:fixed;
+    top: 0;
+    right:-100%;
+    width: 360px;
+   min-height: 90vh;
+    padding: 20px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 2px;
+    transition: 0.3s ease-in-out;
+}
+
+.cart.active{
+  right: 0;
+}
+
+.cart-title{
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 2rem;
+}
+
+.cart-box{
+  display: grid;
+  grid-template-columns: 32% 50% 18%;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+
+}
+.cart-img{
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  padding: 10px;
+}
+.detail-box{
+  display: grid;
+  row-gap: 0.5rem;
+}
+.cart-product-title{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.cart-price{
+  font-weight: 500;
+
+}
+.cart-quantity{
+  border: 1px solid blue;
+  outline-color: green;
+  width: 2.4rem;
+  text-align: center;
+  font-size: 1rem;
+}
+.cart-remove{
+  font-size: 24px;
+  color: #0d94af;
+  cursor: pointer;
+}
+
+
+.total{
+   display: flex;
+   justify-content: flex-end;
+   margin-top: 1.5rem;
+   border-top: 1px solid black;
+}
+
+.total-title{
+  font-size: 1rem;
+  font-weight: 600;
+
+}
+.total-price{
+  margin-left: 0.5rem;
+}
+.btn-buy{
+  display: flex;
+  margin:  1.5rem auto 0 auto;
+  padding: 12px 20px;
+  border: none;
+  background-color: #0C7489;
+  color: black;
+  font-size: 1rem;
+  font-weight: 500;
+
+  cursor: pointer;  
+
+}
+.btn-buy:hover{
+  opacity: 0.7;
+}
+#close-cart{
+  position: absolute;
+  top: 1rem;
+  right:0.8rem;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.google-map{
+  padding-bottom: 50%; ;
+  position: relative;
+}
+.google-map iframe{
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top:0;
+  position: absolute;
+}
+
+
+
+
+
+
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+
+
+@media (max-width: 1100px) {
+    .Button-1 a img, .Button-2 a img {
+      max-width: 700px;
+    }
+}
+@media (max-width: 700px) {
+    .Button-1 a img, .Button-2 a img {
+      max-width: 250px;
+    }
+}
+
+@media (max-height: 750px) {
+    /* Adjust styles for smaller screens */
+    .Button-1 a img, .Button-2 a img {
+        max-width: 300px;
+      }
+}
